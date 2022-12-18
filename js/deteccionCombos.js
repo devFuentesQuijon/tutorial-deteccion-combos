@@ -1,8 +1,9 @@
-const up    = "ArrowUp";
-const down  = "ArrowDown";
-const left  = "ArrowLeft";
-const right = "ArrowRight";
-
+const up       = "ArrowUp";
+const down     = "ArrowDown";
+const left     = "ArrowLeft";
+const right    = "ArrowRight";
+const aButton  = "a";
+const bButton  = "b";
 
 class Combo{
     constructor(codigo){
@@ -43,7 +44,7 @@ class Combo{
     }
 }
 
-var codigoKonami = new Combo ([up,up,down,down,left,right,left,right]);
+var codigoKonami = new Combo ([up,up,down,down,left,right,left,right,bButton,aButton]);
 var song         = new Audio('resources/media/sounds/8-bit-powerup-6768.mp3');
 var helloThere   = new Audio('resources/media/sounds/obi-wan-hello-there.mp3');
 helloThere.play();
